@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 const GA_TRACKING_ID = "G-WLS509JKBY"; 
 
 const sendPageView = (url) => {
-  if (window.gtag) {
+  if (typeof window !== "undefined" && window.gtag) {
     window.gtag("config", GA_TRACKING_ID, {
       page_path: url,
     });

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/navbar';
 import Link from 'next/link';
 import { FiExternalLink, FiCode, FiLock, FiShield, FiServer, FiAward, FiBookOpen, FiChevronDown, FiChevronRight } from 'react-icons/fi';
-<script defer data-domain="phoenix-sec.org" src="https://plausible.io/js/script.js"></script>
 
 export default function CTFResearch() {
   const [activeTab, setActiveTab] = useState(0);
