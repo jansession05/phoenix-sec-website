@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
-    reactStrictMode: true,
-    swcMinify: true,
   },
   async redirects() {
     return [
@@ -14,6 +13,5 @@ const nextConfig = {
       },
     ]
   },
-  // Remove the incorrect analyticsId and speedInsights configuration
 };
 module.exports = nextConfig
