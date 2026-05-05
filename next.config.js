@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   eslint: {
+    // Desactiva la validación de ESLint durante el build para evitar errores en Vercel
     ignoreDuringBuilds: true,
   },
   async redirects() {
@@ -14,4 +15,5 @@ const nextConfig = {
     ]
   },
 };
-module.exports = nextConfig
+
+module.exports = nextConfig;
