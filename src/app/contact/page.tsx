@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/navbar';
 import Link from 'next/link';
 import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck } from 'react-icons/fi';
-<script defer data-domain="phoenix-sec.org" src="https://plausible.io/js/script.js"></script>
+
+import Script from 'next/script';
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -62,6 +63,14 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-dark-400 cyber-grid">
       <Navbar />
+      
+      {/* Plausible Analytics script */}
+      <Script 
+        defer 
+        data-domain="phoenix-sec.org" 
+        src="https://plausible.io/js/script.js"
+        strategy="afterInteractive"
+      />
       
       {/* Hero Section */}
       <section className="relative py-20 px-4">
